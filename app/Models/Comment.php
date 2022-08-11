@@ -10,4 +10,14 @@ class Comment extends Model
     use HasFactory;
      //Campos que no quiero que se asignen masivamente.
      protected $guarded = ['id', 'created_at', 'updated_at'];
+
+     //Relación de uno a muchos inversa (comment-user)
+     public function user(){
+        return $this->belongsTo(User::class);
+     }
+
+     //Relación de uno a muchos inversa (comments-article)
+     public function article(){
+        return $this->belongsTo(Article::class);
+     }
 }

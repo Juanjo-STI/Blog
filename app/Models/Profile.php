@@ -11,4 +11,9 @@ class Profile extends Model
 
     //Campos que no quiero que se asignen masivamente.
     protected $guarded = ['id', 'created_at', 'updated_at'];
+
+    //Relación uno a uno inversa (profile-user)
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }
