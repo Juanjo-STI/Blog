@@ -1,0 +1,7 @@
+##Anotaciones importantes###
+
+11/08/2022
+Cuando realicé el clone del repositorio, no me funcionaba ni el login ni register, debido
+a que una vez que corrí npm run dev, no apague y volví a encencer apache.
+A partir de esto último para hacer funcionar esa parte volví a instalar las dependencias
+de bootstrap, y eso pudo hacer "modificaciones" que en realidad no tienen nada importante.
