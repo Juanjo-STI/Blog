@@ -5,3 +5,20 @@ Cuando realicé el clone del repositorio, no me funcionaba ni el login ni regist
 a que una vez que corrí npm run dev, no apague y volví a encencer apache.
 A partir de esto último para hacer funcionar esa parte volví a instalar las dependencias
 de bootstrap, y eso pudo hacer "modificaciones" que en realidad no tienen nada importante.
+
+12/08/2022
+Tener en cuenta que a la hora de realizar las migraciones, se debe utilizar
+--seed, para que ejecute los seeders.
+Como se realizaron modificaciones en la tabla users
+de 'name' a 'full_name', hay que aplicar un fresh.
+Eso nos deja con el siguiente comando:
+
+php artisan migrate:fresh --seed
+
+####################################################
+###### Para trabajar con las imágenes se debe ######
+####################################################
+
+correr el comando:
+php artisan storage:link
+//Genera el enlace desde public para ver el storage.
