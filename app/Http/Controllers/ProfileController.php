@@ -2,13 +2,11 @@
 
 namespace App\Http\Controllers;
 
-//use App\Http\Middleware\Authenticate;
 use App\Http\Requests\ProfileRequest;
 use App\Models\Profile;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-//use Illuminate\Support\Facades\Auth;
-//use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 
 class ProfileController extends Controller
