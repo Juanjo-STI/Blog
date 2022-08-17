@@ -22,3 +22,14 @@ php artisan migrate:fresh --seed
 correr el comando:
 php artisan storage:link
 //Genera el enlace desde public para ver el storage.
+
+
+16/08/2022
+Estuve trabajando en el envío de emails de bienvenida, pero desde la máquina del trabajo no funciona.
+Me falta probar desde la máquina particular. Intuyo que puede tratarse de un problema de proxy.
+
+
+---- Estoy seguro que voy a tener que volver a ver la parte donde se le indicaba que podía acceder
+a la carpeta pública para descargar imágenes y demás...
+
+- filesystem, filesystemprovider y todo eso.. ----

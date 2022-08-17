@@ -14,7 +14,10 @@
                         </div>
                     @endif
 
-                    {{ __('You are logged in!') }}
+                    <pre>
+                    {{var_dump($navbar)}}
+                    </pre>
+
                 </div>
             </div>
         </div>
